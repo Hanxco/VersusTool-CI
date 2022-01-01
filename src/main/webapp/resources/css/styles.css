@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	margin:0;
+	background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+	background: url('https://wallpapercave.com/wp/wp2895342.jpg') no-repeat center center fixed;
+	background-size: cover;  
+}
+
+.container {
+	background-color: white;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.cardVersus .card-title {
+	margin-top: 150px;
+}
+
+.cardVersus:active {
+	box-shadow: 10px -10px teal;
+	transform: translateY(0);
+}
+
+
+.cardVersus:hover {
+	color: #fff;
+	background-color: #1A1A1A;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}

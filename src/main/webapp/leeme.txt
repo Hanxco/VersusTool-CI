@@ -1,0 +1,2 @@
+La carpeta webapp equivale a la carpeta WebContent de nuestro proyecto
+Aquí irian las carpetas WEB-INF o el fichero web.xml
