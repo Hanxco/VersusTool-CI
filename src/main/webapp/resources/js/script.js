@@ -25,3 +25,8 @@ $( document ).ready(function() {
 	});
 	
 });
+
+
+function compareTools() {
+	window.location.href = '/VersusTools/vs/' + $('#appSelect1').val() + '/versus/' + $('#appSelect2').val();
+}

@@ -30,6 +30,7 @@
 				</div>
 				<div class="col-1" align="right">
 					<input type="button"
+							onclick="compareTools()"
 							value="Comparar"
 							class="btn btn-primary" />
 				</div>

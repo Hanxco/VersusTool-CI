@@ -9,11 +9,40 @@
 	<div class="container mt-3 p-5">
 		<div class="align-center">	
 			<jsp:include flush="true" page="menu.jsp"/>
-			<br><br>
-			
-			<div class="row">
+			<div class="row p-5 mt-2" id="herr_comp_container">
 				<div class="col-12">
-					<div class="card-columns">
+					<h3>Compara las mejores herramientas</h3>
+				</div>
+				<div class="col-6">
+					<select class="form-control" name="appSelect1" id="appSelect1">
+						<option value="">Selecciona herramienta</option>
+						<c:forEach var="app" items="${lstApplications}" >
+							<option value="${app.id}">${app.name}</option>
+						</c:forEach>				  	
+				 	</select>
+				</div>
+				<div class="col-6">
+					<select class="form-control" name="appSelect2" id="appSelect2">
+						<option value="">Selecciona herramienta</option>
+						<c:forEach var="app" items="${lstApplications}" >
+							<option value="${app.id}">${app.name}</option>
+						</c:forEach>				  
+				 	</select>
+				</div>
+				<div class="col-12 mt-4" align="center">
+					<input type="button"
+							id="compareBtn"
+							value="Comparar"
+							onclick="compareTools()"
+							class="btn btn-primary" />
+				</div>
+			</div>
+			<div class="row mt-5" style="border-radius: 25px;">
+				<div class="col-12">
+					<h3>Por tipo de herramienta</h3>
+				</div>
+				<div class="col-12">
+					<div class="card-columns" id="cardHerra_container">
 					  <div class="card cardVersus pointer" onclick="openVersus(1);">
 						  	<img src="<c:url value='/resources/static/editorCodigo.png'/>" 
 								 align="right" 
