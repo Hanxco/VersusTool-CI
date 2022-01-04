@@ -17,8 +17,9 @@ _**DISCLAIMER: VersusTool IS A PROTOYPE IN PROGRESS.**_ Not all features mention
 
 ## Installation
 
-The first step it's configure the user and password of your database in script.sh file. Start mysql server.
-Distype can be installed via maven.
+1. Configure user and password of your database in script.sh file. 
+2. Start mysql server.
+3. Run the following commands to create the schema database, import all records, and create the package application.
 ```sh
 sh ./script.sh
 mvn package
