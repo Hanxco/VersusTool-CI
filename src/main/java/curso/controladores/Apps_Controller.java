@@ -56,14 +56,12 @@ public class Apps_Controller {
 		app.setDescription(description);
 		app.setLink(link);
 		appsGestor.insertApp(app);
-		System.out.println("app => " + app);
 		return mav;
     }
 	
 	@RequestMapping(path="/tool/{id}", method = RequestMethod.GET)
 	public ModelAndView showToolDetail(@PathVariable("id") int itemId) {
 		ModelAndView mav = new ModelAndView("toolDetail");
-		System.out.println("itemId => " + itemId);
 		List<AppDetailWrapper> lstWrapper = appDetailGestor.getAppsDetailByAppId(itemId);
 		mav.addObject("appObj", appsGestor.getAppById(itemId));
 		mav.addObject("appCriterias", lstWrapper);

@@ -43,7 +43,6 @@ public class AppDetailGestor {
 	public List<AppDetailWrapper> getAppsDetailByAppId(Integer appId) {
 		List<AppDetailWrapper> lstAppWrapper = new ArrayList<AppDetailWrapper>();
 		List<AppDetail> lstAppDetail = appDetailDAO.getAllByAppId(appId);
-		System.out.println("lstAppDetail => " + lstAppDetail);
 
 		for (AppDetail appDetail : lstAppDetail) {
 			if (appDetail.getCriteriaId() != null) {				
