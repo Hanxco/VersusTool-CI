@@ -13,7 +13,7 @@ Its purpose is to compare different professional computer tools.
 
 ![Main screen](https://github.com/Hanxco/VersusTool-CI/blob/main/docGit/Captura.PNG?raw=true)
 
-_**DISCLAIMER: VersusTool IS A PROTOYPE IN PROGRESS.**_ Not all features mentioned below are complete and implemented.
+_**DISCLAIMER: VersusTool IS A PROTOYPE IN PROGRESS.**_ Not all features mentioned are complete and implemented.
 
 ## Installation
 
