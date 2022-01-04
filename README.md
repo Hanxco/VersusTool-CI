@@ -2,7 +2,7 @@
 
 ## About
 
-VersusTool web application to compare professional IT toolsS
+VersusTool web application for comparing professional IT tools created using Java Spring Boot.
 Web application created for the Continuous Integration subject of the Master's Degree in Agile Software Development for the Web.
 Its purpose is to compare different professional computer tools.
 - Manage registered applications
